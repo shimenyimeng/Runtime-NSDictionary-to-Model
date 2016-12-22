@@ -15,6 +15,8 @@
 		D9C33D341E0B9D620040FCC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9C33D321E0B9D620040FCC9 /* LaunchScreen.storyboard */; };
 		D9C33D3F1E0B9D620040FCC9 /* _37___Runtime_________Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = D9C33D3E1E0B9D620040FCC9 /* _37___Runtime_________Tests.m */; };
 		D9C33D4A1E0B9D620040FCC9 /* _37___Runtime_________UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D9C33D491E0B9D620040FCC9 /* _37___Runtime_________UITests.m */; };
+		D9C33D591E0B9D740040FCC9 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = D9C33D581E0B9D740040FCC9 /* Person.m */; };
+		D9C33D5C1E0B9E1D0040FCC9 /* NSObject+runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = D9C33D5B1E0B9E1D0040FCC9 /* NSObject+runtime.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		D9C33D451E0B9D620040FCC9 /* 037-- Runtime获取对象的属性数组UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "037-- Runtime获取对象的属性数组UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9C33D491E0B9D620040FCC9 /* _37___Runtime_________UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_37___Runtime_________UITests.m"; sourceTree = "<group>"; };
 		D9C33D4B1E0B9D620040FCC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9C33D571E0B9D740040FCC9 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		D9C33D581E0B9D740040FCC9 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		D9C33D5A1E0B9E1D0040FCC9 /* NSObject+runtime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+runtime.h"; sourceTree = "<group>"; };
+		D9C33D5B1E0B9E1D0040FCC9 /* NSObject+runtime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+runtime.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,10 @@
 				D9C33D281E0B9D620040FCC9 /* AppDelegate.m */,
 				D9C33D2A1E0B9D620040FCC9 /* ViewController.h */,
 				D9C33D2B1E0B9D620040FCC9 /* ViewController.m */,
+				D9C33D5A1E0B9E1D0040FCC9 /* NSObject+runtime.h */,
+				D9C33D5B1E0B9E1D0040FCC9 /* NSObject+runtime.m */,
+				D9C33D571E0B9D740040FCC9 /* Person.h */,
+				D9C33D581E0B9D740040FCC9 /* Person.m */,
 				D9C33D2D1E0B9D620040FCC9 /* Main.storyboard */,
 				D9C33D301E0B9D620040FCC9 /* Assets.xcassets */,
 				D9C33D321E0B9D620040FCC9 /* LaunchScreen.storyboard */,
@@ -275,6 +285,8 @@
 			files = (
 				D9C33D2C1E0B9D620040FCC9 /* ViewController.m in Sources */,
 				D9C33D291E0B9D620040FCC9 /* AppDelegate.m in Sources */,
+				D9C33D5C1E0B9E1D0040FCC9 /* NSObject+runtime.m in Sources */,
+				D9C33D591E0B9D740040FCC9 /* Person.m in Sources */,
 				D9C33D261E0B9D620040FCC9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
