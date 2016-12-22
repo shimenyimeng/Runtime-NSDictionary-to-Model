@@ -9,7 +9,7 @@
 #import "NSObject+runtime.h"
 #import <objc/runtime.h>
 
-const char *kPropertyListKey;
+const char *kPropertyListKey = "PropertyListKey";
 @implementation NSObject (runtime)
 
 + (instancetype)gxf_objectWithDictionary:(NSDictionary *)dict {
