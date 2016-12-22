@@ -9,6 +9,7 @@
 #import "NSObject+runtime.h"
 #import <objc/runtime.h>
 
+const char *kPropertyListKey;
 @implementation NSObject (runtime)
 
 + (instancetype)gxf_objectWithDictionary:(NSDictionary *)dict {
@@ -32,6 +33,13 @@
 
 + (NSArray *)gxf_getProperties {
     
+    // 一个对象的属性是不会变的，为了防止多次获取对象属性时频繁去运行时获取
+    NSArray *propertyArray = objc_getAssociatedObject(self, kPropertyListKey);
+    if (propertyArray != nil) {
+        
+        return propertyArray;
+    }
+    
     unsigned int count = 0;
     objc_property_t *properties = class_copyPropertyList([self class], &count);
     
@@ -50,6 +58,9 @@
     }
     
     free(properties);
+    
+    // 关联对象
+    objc_setAssociatedObject(self, kPropertyListKey, arrayM.copy, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     
     return arrayM.copy;
 }

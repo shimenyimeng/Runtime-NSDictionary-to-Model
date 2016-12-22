@@ -19,6 +19,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [Person gxf_getProperties];
+    
     Person *person = [Person gxf_objectWithDictionary:@{@"name" : @"guxuefei", @"age" : @25, @"height" : @173, @"hh" : @"hahaha"}];
     
     NSLog(@"%@", person);
